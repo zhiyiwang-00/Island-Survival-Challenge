@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <title>Island Survival</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    <div id="container">
+        <div id="top-row">
+            <div id="resource-inventory">
+                <div id="survivor-info">
+                    <h2>Survivor</h2>
+                    <img src="survivor.png" alt="Survivor" id="survivor-image">
+                    <span style="font-size:20px"> 💪 </span>
+                    <meter id="energy-meter" min="0" max="100"></meter>
+                </div>
+                <div id="resource-list">
+                    <ul style="list-style-type: none;">
+                        <li class="resource"> 🪵 <span id="wood"></span></li>
+                        <li class="resource"> 🌿 <span id="vine"></span></li>
+                        <li class="resource"> 🍖 <span id="food"></span></li>
+                        <li class="resource"> 🪨 <span id="stone"></span></li>
+                        <li class="resource"> 🔮 <span id="obsidian"></span></li>
+                        <li class="resource"> 🪽 <span id="rare-fang"></span></li>
+                    </ul>
+                </div>
+                <div id="crafted-tool-display" class="crafted-tool-display">
+                    <!-- <img src="https://cdn.glitch.global/4ab89df4-051b-4f6c-b564-2317ed5cc084/SuperAxe.png" alt="crafted-tool" class="crafted-tool-img"> -->
+                </div>
+            </div>
+
+
+            <div id="survival-actions">
+                <h2 style="margin: 0;">Actions</h2>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <button class="action" id="hunt" onclick="doAction('hunt')">Hunt</button> 🍖 
+                    </li>
+                    <li>
+                        <button class="action" id="gather" onclick="doAction('gather')">Gather</button> 🪵🌿🪨
+                    </li>
+                    <li>
+                        <button class="action" id="rest" onclick="doAction('rest')">Rest</button> 💤
+                    </li>
+                    <li>
+                        <button class="action" id="sail-away" disabled onclick="doAction('sailAway')">Sail away</button> ⛵️
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bottom-row">
+            <div id="tool-crafting">
+                <div id="tool-info">
+                    <div id="tool-info-text">
+                        <h2 id="tool-title"></h2>
+                        <p id="tool-description"></p>
+                        <h3 id="require-title"></h3>
+                        <ul id="required-resource"></ul>
+                        
+                    </div>
+                    <div id="tool-info-img">
+                        <img src="img_default.png" alt="crafted-tool" id="tool-img">
+                    </div>
+                    
+                </div>
+                
+                
+                <div id="tool-selector">
+                    <label>Choose an item to craft:</label>
+                    <select id="tool-select-list">
+                        <option value="" disabled selected value> -- Select an item to craft -- </option>
+                    </select>
+                    <br><br>
+                    <button id="submit-selected-tool">Craft</button>
+
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

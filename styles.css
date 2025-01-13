@@ -1,0 +1,236 @@
+
+ body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+p{
+    margin: 0;
+}
+/* 
+ul{
+    list-style-type: none;
+} */
+
+button{
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #fc5e5f;
+    box-shadow: 0 9px #666;
+}
+
+button:enabled:active {
+    box-shadow: 0 5px #333;
+    transform: translateY(4px);
+}
+
+button:disabled {
+    opacity: 0.6;
+}
+
+/* Container to hold the blocks */
+#container {
+    display: flex;
+    flex-direction: column; /* Stack the blocks vertically */
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+/* Block 1 and Block 2 will be in the same row */
+#top-row {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+
+/* Block 1 (takes 60%) */
+#resource-inventory{
+    display: flex; /* Enable flexbox for each block */
+    align-items: center; /* Center items horizontally */
+    background-color: #90aa80;
+    color: black;
+    /* padding: 20px; */
+    width: 60%;
+    /* box-sizing: border-box; */
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+#survivor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items vertically in the center */
+    /* gap: 10px; Add spacing between elements */
+    margin: 50px;
+    width: 40%;
+  }
+
+#survivor-image{
+    display: flex;
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 300px;
+    margin: 0;
+}
+
+#energy-meter{
+    width: 150px;
+    height: 40px;
+    margin: 0;
+}
+
+#resource-list{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+
+/* #crafted-tool-display{
+    display: flex;
+    width: 40%;
+}
+
+.crafted-tool-img{
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 10%;
+} */
+
+#crafted-tool-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+#crafted-tool-display img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+/* Block 2 (takes 40%) */
+#survival-actions{
+    background-color: #adade1;
+    color: white;
+    /* padding: 20px; */
+    width: 40%;
+    /* box-sizing: border-box; */
+    margin: 5px;
+    border-radius: 10px;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+#survival-actions li{
+    margin: 20px;
+    font-size: 25px;
+}
+
+/* .action{
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #fc5e5f;
+    box-shadow: 0 9px #666;
+} */
+
+/* .action:active {
+    box-shadow: 0 5px #333;
+    transform: translateY(4px);
+}
+
+.action-disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+} */
+#bottom-row{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+/* Block 3 (takes 100% width and located below Block 1 and Block 2) */
+#tool-crafting {
+    display: flex;
+    background-color: #abdbfe;
+    /*padding: 20px;*/
+    width:100%;
+    /* box-sizing: border-box;  */
+    margin: 5px; /* Add space between rows */
+    border-radius: 10px;
+    /* padding-left: 8%; */
+    /* padding-right: 8%;  */
+}
+
+#tool-info{
+    display: flex;
+    width: 45%;
+    height: 80%;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin:auto;
+}
+
+#tool-info-text{
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    width: 40%; 
+    padding: 10%;
+   
+}
+
+#tool-info-text li, span{
+    font-size: 20px;
+}
+
+#tool-info-img{
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    width: 50%;
+    border-radius: 20px;
+    
+}
+
+#tool-info-img img{
+    width: 200px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+
+#tool-selector{
+    width: 45%;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 20px;
+}
+
+#tool-selector select{
+    font-size: 20px;
+    height: 40px;
+}
+
+
+
+
+
+
