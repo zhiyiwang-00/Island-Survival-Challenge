@@ -12,7 +12,7 @@ function energyCheckRange(energy){
         alert("OUT OF ENERGY");
         // console.log("OUT OF ENERGY");
     } else if (energy < 10 && food.value < 10){
-        alert("Not enough food for resting. YOU LOSE.☠️");
+        alert("YOU LOSE.☠️");
         location.reload();
         // document.getElementById("container").classList.add("disabled");
     }
